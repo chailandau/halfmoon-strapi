@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_drinks_ingredients",
+  "info": {
+    "displayName": "Ingredients",
+    "icon": "lemon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Ingredient": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

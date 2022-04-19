@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_drinks_instructions",
+  "info": {
+    "displayName": "Instructions",
+    "icon": "scroll",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Step": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

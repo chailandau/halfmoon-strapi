@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_drinks_optionals",
+  "info": {
+    "displayName": "Optional",
+    "icon": "question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Optional": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
