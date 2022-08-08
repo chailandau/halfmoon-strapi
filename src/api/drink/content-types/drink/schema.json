@@ -1,37 +1,44 @@
 {
-  "collectionName": "components_drinks_drinks",
+  "kind": "collectionType",
+  "collectionName": "drinks",
   "info": {
-    "displayName": "Drink",
-    "icon": "glass-martini-alt",
+    "singularName": "drink",
+    "pluralName": "drinks",
+    "displayName": "Drinks",
     "description": ""
   },
-  "options": {},
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
   "attributes": {
     "Title": {
       "type": "string",
-      "unique": false,
       "required": true
     },
     "Description": {
       "type": "text"
     },
     "Ingredients": {
-      "displayName": "Ingredients",
       "type": "component",
       "repeatable": true,
       "component": "drinks.ingredients"
     },
     "Instructions": {
-      "displayName": "Instructions",
       "type": "component",
       "repeatable": true,
       "component": "drinks.instructions"
     },
     "Optional": {
-      "displayName": "Optional",
       "type": "component",
       "repeatable": true,
       "component": "drinks.optional"
+    },
+    "Spirit": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::spirit.spirit",
+      "inversedBy": "Drinks"
     }
   }
 }

@@ -17,14 +17,15 @@
       "required": true,
       "unique": true
     },
-    "Drinks": {
-      "type": "component",
-      "repeatable": true,
-      "component": "drinks.drink"
-    },
     "Order": {
       "type": "integer",
       "unique": true
+    },
+    "Drinks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::drink.drink",
+      "mappedBy": "Spirit"
     }
   }
 }
